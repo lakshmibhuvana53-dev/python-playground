@@ -8,10 +8,10 @@ for length in range(word_length):
     place_holders += "_"
 print(place_holders)
 game_over = False
+correct_letters = []
 while not game_over:
     guess = input("Guess a letter: ").lower()
     print(guess)
-    correct_letters = []
     display =" "
     for letter in chosen_word:
         if letter == guess:
