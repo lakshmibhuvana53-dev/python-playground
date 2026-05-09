@@ -1,3 +1,12 @@
+print("Welcome to Hangman!")
+print(''' _                                             
+| |                                            
+| |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
+| '_ \ / _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+| | | | (_| | | | | (_| | | | | | | (_| | | | |
+|_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                    __/ |                      
+                   |___/     ''')
 import random
 stages = ['''
   +---+
@@ -56,9 +65,8 @@ stages = ['''
 =========
 ''']
 
-word_list = ["python", "java", "ruby", "javascript", "csharp", "golang", "swift", "kotlin", "php", "typescript"]
+word_list = ["python", "programming", "computer", "science", "hangman", "challenge", "developer", "algorithm", "function", "variable"]
 chosen_word = random.choice(word_list)
-print(chosen_word)
 place_holders = " "
 word_length = len(chosen_word)
 for length in range(word_length):
@@ -92,6 +100,10 @@ while not game_over:
         game_over = True
         print("You win!")
     print(stages[lives])
+print(f"The word was: {chosen_word}")
+print("Thank you for playing Hangman! \n Hope you had fun!")
+
+
 
 
   
