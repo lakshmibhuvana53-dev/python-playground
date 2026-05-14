@@ -14,18 +14,15 @@ logo = '''                         ___________
 print(logo)
 def find_highest_bidder(auction_dict):       
     highest_bid =0
-    winner = ""
-    runner_up = " "
+    winner = " "
     for bidder in auction_dict:
             bid_amount = int(auction_dict[bidder])
             if bid_amount > highest_bid:
                     highest_bid = bid_amount
                     winner = bidder
-            elif bid_amount < highest_bid and bid_amount > int(auction_dict[bid_amount]):
-                 runner_up = bidder
+        
     
     print(f"The winner is {winner} with a bid of ${highest_bid}")
-    print(f"The runner up is {runner_up} with a bid of ${bid_amount}")
     
 
 user_name = input("What is your name?\n")
