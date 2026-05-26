@@ -40,11 +40,14 @@ def game():
             break
         elif guess < number:
             print("Too Low! \nGuess Again.")
-            print(f"You have {attempts - 1} attempts remaining to guess the number.")
+            print(f"You have {attempts-1} attempts remaining to guess the number.")
         elif guess > number:
             print("Too High! \nGuess Again." )
-            print(f"You have {attempts - 1} attempts remaining to guess the number.")
-        attempts -= 1
-        if attempts == 0:
-            print(f"Sorry, you've run out of attempts. The number was {number}.")
+            print(f"You have {attempts-1} attempts remaining to guess the number.")
+        
+        for i in range(1):
+            attempts -= 1
+
+    if attempts == 0:
+        print(f"Sorry, you've run out of attempts. The number was {number}.")
 game()
