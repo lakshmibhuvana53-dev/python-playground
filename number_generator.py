@@ -29,7 +29,7 @@ while attempts > 0:
     elif guess > random_number:
         print("Too high!")
     
-        attempts -= 1
+    attempts -= 1
 
         
     if attempts == 0:
