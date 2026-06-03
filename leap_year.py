@@ -11,5 +11,4 @@ def is_a_leap_year(year):
         return False
             
 
-is_a_leap_year(2400)
-print(is_a_leap_year(1949))
+print(is_a_leap_year(2000))
