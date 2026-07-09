@@ -33,9 +33,6 @@ while attempts > 0:
 
         
     if attempts == 0:
-
-
-
-        print(f"Sorry, you've run out of attempts. The number was {random_number}.")
+       print(f"Sorry, you've run out of attempts. The number was {random_number}.")
         
         
