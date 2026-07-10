@@ -1,0 +1,18 @@
+import  turtle
+tummy = turtle.Turtle()
+tummy.shape("turtle")
+tummy.color("green")
+print("Hello, I am a turtle!")
+tummy.forward(100)
+tummy.left(90)
+tummy.forward(100)
+tummy.left(90)
+tummy.forward(100)
+tummy.left(90)
+tummy.forward(100)
+tummy.left(90)
+
+screen = turtle.Screen()
+print(screen.canvwidth)
+print(screen.canvheight)
+screen.exitonclick()
