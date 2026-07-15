@@ -34,5 +34,6 @@ while attempts > 0:
         
     if attempts == 0:
        print(f"Sorry, you've run out of attempts. The number was {random_number}.")
-        
-        
+print("Game Over!")
+print("Thank you for playing the Number Guessing Game!")
+print("Bye See you next time!")
