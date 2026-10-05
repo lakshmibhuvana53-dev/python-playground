@@ -19,24 +19,24 @@ class ExpenseManager:
             cost = float(input("Cost: "))
             if cost <= 0:
                 print("Cost must be a positive number.")
-                return None
+                return
         except ValueError:
             print("Invalid cost format. Please enter a valid number.")
-            return None
+            return 
         category = input("Category: ")
         try:
             date = input("Date : ")
             date = datetime.strptime(date, "%Y-%m-%d").date()
         except ValueError:
             print("Invalid date format. Please use YYYY-MM-DD.")
-            return None
+            return 
         expense_id = self.id_generator()
         expense = Expense(expense_name, cost, category, date, expense_id)
         return expense
 
     def add_expense(self):
         expense = self.get_expense_details()
-        if expense == None:
+        if expense is None:
             print("Expense details are not valid. Please try again.")
         else:
             self.expenses.append(expense)
@@ -93,8 +93,8 @@ class ExpenseManager:
     
     def category_wise_expense(self):
         if not self.expenses:
-                    print("No expenses recorded.")
-                    return
+            print("No expenses recorded.")
+            return
         
         category_expenses = self.get_category_total()
         for category, total in category_expenses.items():
